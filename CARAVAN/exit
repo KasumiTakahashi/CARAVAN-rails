@@ -1,0 +1,15 @@
+
+[1mFrom:[0m /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/activesupport-5.2.4.5/lib/active_support/callbacks.rb:133 ActiveSupport::Callbacks#run_callbacks:
+
+    [1;34m128[0m: 
+    [1;34m129[0m:         [1;34m# Common case: no 'around' callbacks defined[0m
+    [1;34m130[0m:         [32mif[0m next_sequence.final?
+    [1;34m131[0m:           next_sequence.invoke_before(env)
+    [1;34m132[0m:           env.value = !env.halted && (!block_given? || [32myield[0m)
+ => [1;34m133[0m:           next_sequence.invoke_after(env)
+    [1;34m134[0m:           env.value
+    [1;34m135[0m:         [32melse[0m
+    [1;34m136[0m:           invoke_sequence.call
+    [1;34m137[0m:         [32mend[0m
+    [1;34m138[0m:       [32mend[0m
+
